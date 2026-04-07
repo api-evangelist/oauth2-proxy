@@ -1,5 +1,5 @@
 aid: oauth2-proxy
-name: oauth2-proxy
+name: Oauth2-Proxy
 description: >-
   oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
 type: Index
@@ -14,7 +14,7 @@ modified: '2026-03-27'
 specificationVersion: '0.19'
 apis:
   - aid: oauth2-proxy:oauth2-proxy
-    name: oauth2-proxy
+    name: Oauth2-Proxy
     description: >-
       oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
     humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
