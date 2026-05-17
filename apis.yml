@@ -24,14 +24,14 @@ apis:
     properties:
       - type: Documentation
         url: https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview
-      - type: Getting Started
+      - type: GettingStarted
         url: https://oauth2-proxy.github.io/oauth2-proxy/installation
 common:
   - type: Website
     url: https://oauth2-proxy.github.io/oauth2-proxy/
   - type: Documentation
     url: https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/oauth2-proxy/oauth2-proxy
 maintainers:
   - FN: Kin Lane
