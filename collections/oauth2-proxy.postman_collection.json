@@ -1,0 +1,881 @@
+{
+  "item": [
+    {
+      "id": "9d1d6120-6074-4f21-a017-93b89f60ccfb",
+      "name": "Authenticate and proxy to upstream",
+      "request": {
+        "name": "Authenticate and proxy to upstream",
+        "description": {
+          "content": "Validates the session cookie and proxies authenticated requests to the configured upstream.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            ""
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ba1d4ed2-cebe-418c-90a2-ebcc75736a11",
+          "name": "Upstream response is returned to the client.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        },
+        {
+          "id": "3819f880-ac3a-4b41-866e-feaad0525ed5",
+          "name": "Redirected to the sign-in flow when unauthenticated.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Found",
+          "code": 302,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "36b7905f-d25c-4314-b55e-afccad16494a",
+      "name": "Robots exclusion",
+      "request": {
+        "name": "Robots exclusion",
+        "description": {},
+        "url": {
+          "path": [
+            "robots.txt"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "d7b3b21c-97a8-43c6-89b4-76e1cf67d641",
+          "name": "Returns a disallow-all robots.txt.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "robots.txt"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "799e1365-95e6-417d-8dad-89b4ccde8d58",
+      "name": "Liveness probe",
+      "request": {
+        "name": "Liveness probe",
+        "description": {},
+        "url": {
+          "path": [
+            "ping"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "127fd7b5-82e9-479a-9d3d-2eaf2941dafb",
+          "name": "Service is alive.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "ping"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "d1551245-c073-4ba0-a83a-b819e17a8436",
+      "name": "Readiness probe",
+      "request": {
+        "name": "Readiness probe",
+        "description": {
+          "content": "Verifies underlying connections such as Redis are healthy.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "ready"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "d4e97e43-43cb-4a34-8511-145b3a760b2a",
+          "name": "Service is ready.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "ready"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        },
+        {
+          "id": "2de9f39d-8601-4146-adf1-50a670736dfd",
+          "name": "A dependency is unhealthy.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "ready"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Service Unavailable",
+          "code": 503,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "795d65af-3790-48db-bfaa-46836004aad9",
+      "name": "Prometheus metrics",
+      "request": {
+        "name": "Prometheus metrics",
+        "description": {
+          "content": "Exposes Prometheus-format metrics when enabled.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "metrics"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ee1e2053-6b65-4ec4-8599-d05b956727b4",
+          "name": "Metrics in Prometheus exposition format.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "metrics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "ff698652-5a90-4640-98dd-b0c34724767c",
+      "name": "Render sign-in page",
+      "request": {
+        "name": "Render sign-in page",
+        "description": {},
+        "url": {
+          "path": [
+            "oauth2",
+            "sign_in"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "0ca70b20-4fe0-490f-819f-d68ca51a6bab",
+          "name": "HTML sign-in page.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "sign_in"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "3e599125-6920-4f44-a054-b4e6d351b2d0",
+      "name": "Clear the session cookie",
+      "request": {
+        "name": "Clear the session cookie",
+        "description": {
+          "content": "Clears the local session and optionally redirects to the provider's logout endpoint.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "oauth2",
+            "sign_out"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ec9a5b0a-4dd8-4853-ae58-ad1f9f7b9fd4",
+          "name": "Session cleared and user redirected.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "sign_out"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Found",
+          "code": 302,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0ce11140-3e26-49ab-baad-1b4e89f18a67",
+      "name": "Begin OAuth authorization",
+      "request": {
+        "name": "Begin OAuth authorization",
+        "description": {},
+        "url": {
+          "path": [
+            "oauth2",
+            "start"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "d3d0172d-babe-4e45-b6aa-6efe88fbd422",
+          "name": "Redirects to the OAuth provider's authorize endpoint.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "start"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Found",
+          "code": 302,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f56878cc-e978-45f5-a022-fa6f552b6373",
+      "name": "OAuth callback target",
+      "request": {
+        "name": "OAuth callback target",
+        "description": {
+          "content": "Endpoint the OAuth provider redirects back to after consent.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "oauth2",
+            "callback"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "11f7909a-f53c-402c-a8c4-1bd6a19dbd7d",
+          "name": "Session established and user redirected to the original URL.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "callback"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Found",
+          "code": 302,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "97334ad8-1c9c-4d48-88ec-86eb4b4dbdb3",
+      "name": "External authentication subrequest",
+      "request": {
+        "name": "External authentication subrequest",
+        "description": {
+          "content": "Returns 202 when the request is authenticated and 401 when it is\nnot, intended for use with `nginx auth_request` or similar\ngateways.\n",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "oauth2",
+            "auth"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "key",
+              "value": "_oauth2_proxy"
+            },
+            {
+              "key": "value",
+              "value": "{{apiKey}}"
+            },
+            {
+              "key": "in",
+              "value": "header"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "f69fe200-706e-465f-bd92-ff714ec2c3ce",
+          "name": "Request is authenticated.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "auth"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "_oauth2_proxy",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Accepted",
+          "code": 202,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        },
+        {
+          "id": "6bd47214-74c8-4926-a79b-825503dcbd71",
+          "name": "Request is not authenticated.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "auth"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "_oauth2_proxy",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Unauthorized",
+          "code": 401,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f0d33785-c4a1-41dd-8b01-fd75c0b089dc",
+      "name": "Authenticated user information",
+      "request": {
+        "name": "Authenticated user information",
+        "description": {},
+        "url": {
+          "path": [
+            "oauth2",
+            "userinfo"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "key",
+              "value": "_oauth2_proxy"
+            },
+            {
+              "key": "value",
+              "value": "{{apiKey}}"
+            },
+            {
+              "key": "in",
+              "value": "header"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "4d9665f9-e6f5-4fc3-bb69-04c8fe5cb58f",
+          "name": "JSON object containing the authenticated user's email and groups.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "userinfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "_oauth2_proxy",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "053841b8-c650-4c10-b697-c7b47b5201fc",
+      "name": "Serve static assets for the login/error pages",
+      "request": {
+        "name": "Serve static assets for the login/error pages",
+        "description": {},
+        "url": {
+          "path": [
+            "oauth2",
+            "static",
+            ":path"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "path",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "d9b30fe6-49b7-42a8-b6b7-2ff1b4ccf562",
+          "name": "Static asset (CSS, image, etc.).",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "oauth2",
+                "static",
+                ":path"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "path",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:4180",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "44d621ab-334c-46ca-ae4e-7780ea6b6ce1",
+    "name": "OAuth2 Proxy Endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP endpoints exposed by oauth2-proxy, a reverse proxy that\nauthenticates requests using upstream OAuth/OIDC providers. The\nOAuth2 endpoints live under a configurable prefix (`--proxy-prefix`,\ndefault `/oauth2`); the health and operational endpoints live at the\ndocument root. Sourced from\nhttps://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.\n",
+      "type": "text/plain"
+    }
+  }
+}
