@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/oauth2-proxy-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - cookie
+schemes:
+- name: SessionCookie
+  type: apiKey
+  in: cookie
+  parameter: _oauth2_proxy
+  description: Session cookie established by the OAuth callback.
+  sources:
+  - openapi/oauth2-proxy-openapi.yml
