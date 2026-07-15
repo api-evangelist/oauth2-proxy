@@ -27,6 +27,8 @@ apis:
       - type: GettingStarted
         url: https://oauth2-proxy.github.io/oauth2-proxy/installation
 common:
+  - type: AgenticAccess
+    url: agentic-access/oauth2-proxy-agentic-access.yml
   - type: Authentication
     url: authentication/oauth2-proxy-authentication.yml
   - type: Website
