@@ -1,0 +1,41 @@
+openapi: 3.1.0
+info:
+  title: OAuth2 Proxy Endpoints Metrics Ready API
+  description: 'HTTP endpoints exposed by oauth2-proxy, a reverse proxy that
+
+    authenticates requests using upstream OAuth/OIDC providers. The
+
+    OAuth2 endpoints live under a configurable prefix (`--proxy-prefix`,
+
+    default `/oauth2`); the health and operational endpoints live at the
+
+    document root. Sourced from
+
+    https://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.
+
+    '
+  version: '1.0'
+servers:
+- url: http://localhost:4180
+  description: Default oauth2-proxy listen address
+tags:
+- name: Ready
+paths:
+  /ready:
+    get:
+      summary: Readiness probe
+      description: Verifies underlying connections such as Redis are healthy.
+      responses:
+        '200':
+          description: Service is ready.
+        '503':
+          description: A dependency is unhealthy.
+      tags:
+      - Ready
+components:
+  securitySchemes:
+    SessionCookie:
+      type: apiKey
+      in: cookie
+      name: _oauth2_proxy
+      description: Session cookie established by the OAuth callback.
