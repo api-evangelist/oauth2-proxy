@@ -3,7 +3,20 @@ name: Oauth2-Proxy
 description: >-
   oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oauth2-proxy.png
 tags:
   - Authentication Proxy
   - Proxy
@@ -13,19 +26,75 @@ created: '2026-03-27'
 modified: '2026-03-27'
 specificationVersion: '0.19'
 apis:
-  - aid: oauth2-proxy:oauth2-proxy
-    name: Oauth2-Proxy
-    description: >-
-      oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
-    humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
-    tags:
-      - Authentication Proxy
-      - Proxy
-    properties:
-      - type: Documentation
-        url: https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview
-      - type: GettingStarted
-        url: https://oauth2-proxy.github.io/oauth2-proxy/installation
+- aid: oauth2-proxy:oauth2-proxy
+  name: Oauth2-Proxy
+  description: >-
+    oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID
+    Connect, and many more identity providers.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Authentication Proxy
+  - Proxy
+  properties:
+  - type: Documentation
+    url: https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview
+  - type: GettingStarted
+    url: https://oauth2-proxy.github.io/oauth2-proxy/installation
+- aid: oauth2-proxy:oauth2-proxy-metrics-api
+  name: Oauth2-Proxy Metrics API
+  description: The Metrics API from Oauth2-Proxy — 1 operation(s) for metrics.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Metrics
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-metrics-api-openapi.yml
+- aid: oauth2-proxy:oauth2-proxy-oauth2-api
+  name: Oauth2-Proxy Oauth2 API
+  description: The Oauth2 API from Oauth2-Proxy — 7 operation(s) for oauth2.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Oauth2
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-oauth2-api-openapi.yml
+- aid: oauth2-proxy:oauth2-proxy-oauth2-proxy-endpoints-api
+  name: Oauth2-Proxy OAuth2 Proxy Endpoints API
+  description: >-
+    The OAuth2 Proxy Endpoints API from Oauth2-Proxy — 1 operation(s) for oauth2 proxy endpoints.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - OAuth2 Proxy Endpoints
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-oauth2-proxy-endpoints-api-openapi.yml
+- aid: oauth2-proxy:oauth2-proxy-ping-api
+  name: Oauth2-Proxy Ping API
+  description: The Ping API from Oauth2-Proxy — 1 operation(s) for ping.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Ping
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-ping-api-openapi.yml
+- aid: oauth2-proxy:oauth2-proxy-ready-api
+  name: Oauth2-Proxy Ready API
+  description: The Ready API from Oauth2-Proxy — 1 operation(s) for ready.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Ready
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-ready-api-openapi.yml
+- aid: oauth2-proxy:oauth2-proxy-robots-txt-api
+  name: Oauth2-Proxy Robots.txt API
+  description: The Robots.txt API from Oauth2-Proxy — 1 operation(s) for robots.txt.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Robots.txt
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-robots-txt-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/oauth2-proxy-agentic-access.yml
