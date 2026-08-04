@@ -1,0 +1,24 @@
+{
+  "provider": "oauth2-proxy",
+  "sources": [
+    "oauth2-proxy-metrics-api-openapi.yml",
+    "oauth2-proxy-oauth2-api-openapi.yml",
+    "oauth2-proxy-oauth2-proxy-endpoints-api-openapi.yml",
+    "oauth2-proxy-ping-api-openapi.yml",
+    "oauth2-proxy-ready-api-openapi.yml",
+    "oauth2-proxy-robots-txt-api-openapi.yml"
+  ],
+  "outputs": [
+    "oauth2-proxy-metrics-api-openapi.yml",
+    "oauth2-proxy-oauth2-api-openapi.yml",
+    "oauth2-proxy-oauth2-proxy-endpoints-api-openapi.yml",
+    "oauth2-proxy-ping-api-openapi.yml",
+    "oauth2-proxy-ready-api-openapi.yml",
+    "oauth2-proxy-robots-txt-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
