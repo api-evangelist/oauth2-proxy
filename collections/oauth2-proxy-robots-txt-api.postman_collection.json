@@ -1,0 +1,87 @@
+{
+  "item": [
+    {
+      "id": "8ca9e777-f402-4166-977b-367b193cd51d",
+      "name": "Robots.txt",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5473251c-00f0-4a98-9498-cfe99145f1fb",
+          "name": "Robots exclusion",
+          "request": {
+            "name": "Robots exclusion",
+            "description": {},
+            "url": {
+              "path": [
+                "robots.txt"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f2c568c3-e07b-4796-a15d-ae3e42550c4d",
+              "name": "Returns a disallow-all robots.txt.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "robots.txt"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:4180",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "494735d0-0406-4ccb-be1d-a527cea7005a",
+    "name": "OAuth2 Proxy Endpoints Metrics Robots.txt API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP endpoints exposed by oauth2-proxy, a reverse proxy that\nauthenticates requests using upstream OAuth/OIDC providers. The\nOAuth2 endpoints live under a configurable prefix (`--proxy-prefix`,\ndefault `/oauth2`); the health and operational endpoints live at the\ndocument root. Sourced from\nhttps://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.\n",
+      "type": "text/plain"
+    }
+  }
+}

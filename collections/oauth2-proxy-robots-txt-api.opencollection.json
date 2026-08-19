@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OAuth2 Proxy Endpoints Metrics Robots.txt API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Robots.txt",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Robots exclusion",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:4180/robots.txt"
+          },
+          "docs": "Robots exclusion"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

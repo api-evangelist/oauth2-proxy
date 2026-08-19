@@ -1,0 +1,90 @@
+{
+  "item": [
+    {
+      "id": "e714662e-ad95-488f-9ef3-da09fb9bc2e9",
+      "name": "Metrics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "be52fa2f-9fd5-47d5-9b2b-9fc253869a51",
+          "name": "Prometheus metrics",
+          "request": {
+            "name": "Prometheus metrics",
+            "description": {
+              "content": "Exposes Prometheus-format metrics when enabled.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "metrics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fabd139f-fef3-453a-ab9a-9d9c49bcc0de",
+              "name": "Metrics in Prometheus exposition format.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "metrics"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:4180",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "fc7ff335-0127-4d42-92f0-c6d30bbcb1d9",
+    "name": "OAuth2 Proxy Endpoints Metrics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP endpoints exposed by oauth2-proxy, a reverse proxy that\nauthenticates requests using upstream OAuth/OIDC providers. The\nOAuth2 endpoints live under a configurable prefix (`--proxy-prefix`,\ndefault `/oauth2`); the health and operational endpoints live at the\ndocument root. Sourced from\nhttps://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.\n",
+      "type": "text/plain"
+    }
+  }
+}

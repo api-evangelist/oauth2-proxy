@@ -1,0 +1,119 @@
+{
+  "item": [
+    {
+      "id": "1624bb67-2505-4645-ab89-21c56d5b00d6",
+      "name": "OAuth2 Proxy Endpoints",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d854c26d-d127-47e5-a9f7-97f4509a0c53",
+          "name": "Authenticate and proxy to upstream",
+          "request": {
+            "name": "Authenticate and proxy to upstream",
+            "description": {
+              "content": "Validates the session cookie and proxies authenticated requests to the configured upstream.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "091f4a22-e1bd-4838-91e4-4f06c3ee2261",
+              "name": "Upstream response is returned to the client.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "3d69a1e9-33f8-4fb5-886b-7f118c8641f4",
+              "name": "Redirected to the sign-in flow when unauthenticated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Found",
+              "code": 302,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:4180",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "03b8d9a6-13e9-401d-8f7a-eaf38b96f5c8",
+    "name": "Metrics OAuth2 Proxy Endpoints API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP endpoints exposed by oauth2-proxy, a reverse proxy that\nauthenticates requests using upstream OAuth/OIDC providers. The\nOAuth2 endpoints live under a configurable prefix (`--proxy-prefix`,\ndefault `/oauth2`); the health and operational endpoints live at the\ndocument root. Sourced from\nhttps://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.\n",
+      "type": "text/plain"
+    }
+  }
+}
