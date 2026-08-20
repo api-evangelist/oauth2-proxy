@@ -54,6 +54,8 @@ apis:
   description: The Oauth2 API from Oauth2-Proxy — 7 operation(s) for oauth2.
   humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
   tags:
+  - Authentication
+  tags_raw:
   - Oauth2
   properties:
   - type: OpenAPI
