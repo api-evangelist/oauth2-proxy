@@ -60,17 +60,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/oauth2-proxy-metrics-api-openapi.yml
-- aid: oauth2-proxy:oauth2-proxy-oauth2-api
-  name: Oauth2-Proxy Oauth2 API
-  description: The Oauth2 API from Oauth2-Proxy — 7 operation(s) for oauth2.
-  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
-  tags:
-  - Authentication
-  tags_raw:
-  - Oauth2
-  properties:
-  - type: OpenAPI
-    url: openapi/oauth2-proxy-oauth2-api-openapi.yml
 - aid: oauth2-proxy:oauth2-proxy-oauth2-proxy-endpoints-api
   name: Oauth2-Proxy OAuth2 Proxy Endpoints API
   description: >-
@@ -108,6 +97,15 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/oauth2-proxy-robots-txt-api-openapi.yml
+- aid: oauth2-proxy:oauth2-proxy-oauth2-api
+  name: Oauth2-Proxy Oauth2 API
+  description: The Oauth2 API from Oauth2-Proxy — 7 operation(s) for oauth2.
+  humanURL: https://oauth2-proxy.github.io/oauth2-proxy/
+  tags:
+  - Oauth2
+  properties:
+  - type: OpenAPI
+    url: openapi/oauth2-proxy-oauth2-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/oauth2-proxy-agentic-access.yml
