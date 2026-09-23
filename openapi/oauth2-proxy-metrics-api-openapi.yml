@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: OAuth2 Proxy Endpoints Metrics API
   description: 'HTTP endpoints exposed by oauth2-proxy, a reverse proxy that
@@ -11,9 +11,7 @@ info:
 
     document root. Sourced from
 
-    https://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.
-
-    '
+    https://oauth2-proxy.github.io/oauth2-proxy/features/endpoints.'
   version: '1.0'
 servers:
 - url: http://localhost:4180
@@ -30,6 +28,8 @@ paths:
           description: Metrics in Prometheus exposition format.
       tags:
       - Metrics
+      operationId: getMetrics
+      x-operation-id-source: derived
 components:
   securitySchemes:
     SessionCookie:

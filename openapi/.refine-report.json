@@ -1,24 +1,51 @@
 {
   "provider": "oauth2-proxy",
   "sources": [
-    "oauth2-proxy-metrics-api-openapi.yml",
-    "oauth2-proxy-oauth2-api-openapi.yml",
-    "oauth2-proxy-oauth2-proxy-endpoints-api-openapi.yml",
-    "oauth2-proxy-ping-api-openapi.yml",
-    "oauth2-proxy-ready-api-openapi.yml",
-    "oauth2-proxy-robots-txt-api-openapi.yml"
+    "_original/oauth2-proxy-openapi.yml"
   ],
   "outputs": [
     "oauth2-proxy-metrics-api-openapi.yml",
-    "oauth2-proxy-oauth2-api-openapi.yml",
     "oauth2-proxy-oauth2-proxy-endpoints-api-openapi.yml",
+    "oauth2-proxy-oauth2-api-openapi.yml",
     "oauth2-proxy-ping-api-openapi.yml",
     "oauth2-proxy-ready-api-openapi.yml",
     "oauth2-proxy-robots-txt-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "oauth2-proxy-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "oauth2-proxy-openapi.yml: tagged paths GET / -> OAuth2 Proxy Endpoints",
+    "oauth2-proxy-openapi.yml: tagged paths GET /robots.txt -> Robots.txt",
+    "oauth2-proxy-openapi.yml: tagged paths GET /ping -> Ping",
+    "oauth2-proxy-openapi.yml: tagged paths GET /ready -> Ready",
+    "oauth2-proxy-openapi.yml: tagged paths GET /metrics -> Metrics",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/sign_in -> Oauth2",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/sign_out -> Oauth2",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/start -> Oauth2",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/callback -> Oauth2",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/auth -> Oauth2",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/userinfo -> Oauth2",
+    "oauth2-proxy-openapi.yml: tagged paths GET /oauth2/static/{path} -> Oauth2",
+    "oauth2-proxy-openapi.yml: declared missing tag: Metrics",
+    "oauth2-proxy-openapi.yml: declared missing tag: OAuth2 Proxy Endpoints",
+    "oauth2-proxy-openapi.yml: declared missing tag: Oauth2",
+    "oauth2-proxy-openapi.yml: declared missing tag: Ping",
+    "oauth2-proxy-openapi.yml: declared missing tag: Ready",
+    "oauth2-proxy-openapi.yml: declared missing tag: Robots.txt",
+    "superseded outputs removed: oauth2-proxy-o-auth2-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 7 total)"
+  ],
+  "skipped": [
+    "oauth2-proxy-metrics-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "oauth2-proxy-o-auth2-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "oauth2-proxy-oauth2-proxy-endpoints-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "oauth2-proxy-ping-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "oauth2-proxy-ready-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "oauth2-proxy-robots-txt-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
