@@ -109,6 +109,9 @@ apis:
   - type: OpenAPI
     url: openapi/oauth2-proxy-oauth2-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/oauth2-proxy-capability-edges.yml
+    name: Oauth2-Proxy Business Capability Map
   - type: AgenticAccess
     url: agentic-access/oauth2-proxy-agentic-access.yml
   - type: Authentication
