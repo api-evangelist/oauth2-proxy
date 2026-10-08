@@ -109,6 +109,12 @@ apis:
   - type: OpenAPI
     url: openapi/oauth2-proxy-oauth2-api-openapi.yml
 common:
+  - type: Plans
+    url: plans/oauth2-proxy-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/oauth2-proxy-rate-limits.yml
+  - type: FinOps
+    url: finops/oauth2-proxy-finops.yml
   - type: CapabilityMap
     url: capabilities/oauth2-proxy-capability-edges.yml
     name: Oauth2-Proxy Business Capability Map
