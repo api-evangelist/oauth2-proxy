@@ -1,4 +1,4 @@
-# Oauth2-Proxy (oauth2-proxy)
+# Oauth2-Proxy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,49 +66,125 @@
 
 oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/oauth2-proxy/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/oauth2-proxy/refs/heads/main/apis.yml)
+**Areas:** Authentication Proxy · Proxy
 
-## Scope
+## Oauth2-Proxy on APIs.io
 
-- **Type:** Index
+Everything profiled for Oauth2-Proxy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/oauth2-proxy/](https://apis.io/providers/oauth2-proxy/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (7)
 
-- Authentication Proxy
-- Proxy
+- [Oauth2-Proxy](https://apis.io/apis/oauth2-proxy/oauth2-proxy/) — oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
+- [Oauth2-Proxy Metrics API](https://apis.io/apis/oauth2-proxy/oauth2-proxy-metrics-api/) — The Metrics API from Oauth2-Proxy — 1 operation(s) for metrics.
+- [Oauth2-Proxy OAuth2 Proxy Endpoints API](https://apis.io/apis/oauth2-proxy/oauth2-proxy-oauth2-proxy-endpoints-api/) — The OAuth2 Proxy Endpoints API from Oauth2-Proxy — 1 operation(s) for oauth2 proxy endpoints.
+- [Oauth2-Proxy Ping API](https://apis.io/apis/oauth2-proxy/oauth2-proxy-ping-api/) — The Ping API from Oauth2-Proxy — 1 operation(s) for ping.
+- [Oauth2-Proxy Ready API](https://apis.io/apis/oauth2-proxy/oauth2-proxy-ready-api/) — The Ready API from Oauth2-Proxy — 1 operation(s) for ready.
+- [Oauth2-Proxy Robots.txt API](https://apis.io/apis/oauth2-proxy/oauth2-proxy-robots-txt-api/) — The Robots.txt API from Oauth2-Proxy — 1 operation(s) for robots.txt.
+- [Oauth2-Proxy Oauth2 API](https://apis.io/apis/oauth2-proxy/oauth2-proxy-oauth2-api/) — The Oauth2 API from Oauth2-Proxy — 7 operation(s) for oauth2.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-27
-- **Modified:** 2026-03-27
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Oauth2-Proxy
+Which operations an agent can call, which act, and which need a human in the loop.
 
-oauth2-proxy is an open-source reverse proxy that provides authentication with Google, Azure, OpenID Connect, and many more identity providers.
+- [Oauth2 Proxy Agentic Access](https://apis.io/agentic-access/oauth2-proxy/oauth2-proxy-agentic-access/)
 
-- **Human URL:** [https://oauth2-proxy.github.io/oauth2-proxy/](https://oauth2-proxy.github.io/oauth2-proxy/)
+#### Collections (7)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Authentication Proxy
-- Proxy
+- [OAuth2 Proxy Endpoints](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy/)
+- [OAuth2 Proxy Endpoints Metrics API](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy-metrics-api/)
+- [Proxy Endpoints Metrics Oauth2 API](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy-oauth2-api/)
+- [Metrics OAuth2 Proxy Endpoints API](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy-oauth2-proxy-endpoints-api/)
+- [OAuth2 Proxy Endpoints Metrics Ping API](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy-ping-api/)
+- [OAuth2 Proxy Endpoints Metrics Ready API](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy-ready-api/)
+- [OAuth2 Proxy Endpoints Metrics Robots.txt API](https://apis.io/collections/oauth2-proxy/open-oauth2-proxy-robots-txt-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview)
-- [Getting Started](https://oauth2-proxy.github.io/oauth2-proxy/installation)
-- [Postman Collection](collections/oauth2-proxy.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/oauth2-proxy.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Oauth2 Proxy Authentication](https://apis.io/security/oauth2-proxy/oauth2-proxy-authentication/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Oauth2 Proxy Plans Pricing](https://apis.io/plans/oauth2-proxy/oauth2-proxy-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Oauth2 Proxy Rate Limits](https://apis.io/rate-limits/oauth2-proxy/oauth2-proxy-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Oauth2 Proxy Finops](https://apis.io/finops/oauth2-proxy/oauth2-proxy-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://oauth2-proxy.github.io/oauth2-proxy/)
 - [Documentation](https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview)
-- [GitHub Organization](https://github.com/oauth2-proxy/oauth2-proxy)
+- [GitHub](https://github.com/oauth2-proxy/oauth2-proxy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 21.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 39.3 |
+| Contract quality | 37.8 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/oauth2-proxy/](https://apis.io/providers/oauth2-proxy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Oauth2-Proxy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/oauth2-proxy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
